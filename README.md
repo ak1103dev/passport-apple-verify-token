@@ -29,6 +29,8 @@ supplying a `parsedToken` (with all its information in visible form) and the
 `appleId`.
 
 ```js
+import { Strategy as AppleTokenStrategy } from 'passport-apple-verify-token;
+
 passport.use(new AppleTokenStrategy({
       clientID: 'apple_client_id', // Specify the CLIENT_ID of the app that accesses the backend
       // Or, if multiple clients access the backend: [CLIENT_ID_1, CLIENT_ID_2, CLIENT_ID_3]
